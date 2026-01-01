@@ -1,12 +1,14 @@
 {
   "private": true,
-  "name": "@react-pdf/root",
+  "name": "@cmaccarone/react-pdf",
   "version": "2.0.0",
   "license": "MIT",
-  "author": "Diego Muracciole <diegomuracciole@gmail.com>",
-  "homepage": "https://github.com/diegomura/react-pdf#readme",
   "type": "module",
-  "repository": "git@github.com:diegomura/react-pdf.git",
+  "repository": "https://github.com/cmaccarone/react-pdf",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
   "workspaces": [
     "packages/*",
     "packages/examples/*",

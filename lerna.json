@@ -1,5 +1,11 @@
 {
   "version": "independent",
   "packages": ["packages/*", "packages/examples/*", "e2e/*"],
-  "npmClient": "yarn"
+  "npmClient": "yarn",
+  "command": {
+    "publish": {
+      "registry": "https://npm.pkg.github.com",
+      "ignoreChanges": ["**/*.md", "**/*.test.ts", "**/*.test.tsx", "**/*.test.js"]
+    }
+  }
 }

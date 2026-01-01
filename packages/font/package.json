@@ -1,14 +1,18 @@
 {
-  "name": "@react-pdf/font",
+  "name": "@cmaccarone/react-pdf-font",
   "version": "4.0.3",
   "license": "MIT",
   "description": "Register font and emoji source for react-pdf document",
   "author": "Diego Muracciole <diegomuracciole@gmail.com>",
-  "homepage": "https://github.com/diegomura/react-pdf#readme",
+  "homepage": "https://github.com/cmaccarone/react-pdf#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/diegomura/react-pdf.git",
+    "url": "https://github.com/cmaccarone/react-pdf.git",
     "directory": "packages/font"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
   },
   "type": "module",
   "main": "./lib/index.js",
@@ -23,8 +27,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@react-pdf/pdfkit": "^4.0.4",
-    "@react-pdf/types": "^2.9.1",
+    "@cmaccarone/react-pdf-pdfkit": "^4.0.4",
+    "@cmaccarone/react-pdf-types": "^2.9.1",
     "fontkit": "^2.0.2",
     "is-url": "^1.2.4"
   },

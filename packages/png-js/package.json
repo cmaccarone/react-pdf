@@ -1,5 +1,5 @@
 {
-  "name": "@react-pdf/png-js",
+  "name": "@cmaccarone/react-pdf-png-js",
   "description": "A PNG decoder in JS",
   "version": "3.0.0",
   "license": "MIT",
@@ -10,8 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/diegomura/react-pdf.git",
+    "url": "https://github.com/cmaccarone/react-pdf.git",
     "directory": "packages/png-js"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
   },
   "author": {
     "name": "Devon Govett",

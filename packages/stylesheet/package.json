@@ -1,17 +1,21 @@
 {
-  "name": "@react-pdf/stylesheet",
+  "name": "@cmaccarone/react-pdf-stylesheet",
   "version": "6.1.1",
   "license": "MIT",
   "description": "A styles engine for Node and the browser",
   "author": "Diego Muracciole <diegomuracciole@gmail.com>",
-  "homepage": "https://github.com/diegomura/react-pdf#readme",
+  "homepage": "https://github.com/cmaccarone/react-pdf#readme",
   "type": "module",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/diegomura/react-pdf.git",
+    "url": "https://github.com/cmaccarone/react-pdf.git",
     "directory": "packages/stylesheet"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
   },
   "scripts": {
     "test": "vitest",
@@ -20,8 +24,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@react-pdf/fns": "3.1.2",
-    "@react-pdf/types": "^2.9.1",
+    "@cmaccarone/react-pdf-fns": "3.1.2",
+    "@cmaccarone/react-pdf-types": "^2.9.1",
     "color-string": "^1.9.1",
     "hsl-to-hex": "^1.0.0",
     "media-engine": "^1.0.3",

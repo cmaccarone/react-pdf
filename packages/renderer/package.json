@@ -1,10 +1,10 @@
 {
-  "name": "@react-pdf/renderer",
+  "name": "@cmaccarone/react-pdf-renderer",
   "version": "4.3.1",
   "license": "MIT",
   "description": "Create PDF files on the browser and server",
   "author": "Diego Muracciole <diegomuracciole@gmail.com>",
-  "homepage": "https://github.com/diegomura/react-pdf#readme",
+  "homepage": "https://github.com/cmaccarone/react-pdf#readme",
   "type": "module",
   "main": "./lib/react-pdf.js",
   "browser": {
@@ -12,8 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/diegomura/react-pdf.git",
+    "url": "https://github.com/cmaccarone/react-pdf.git",
     "directory": "packages/renderer"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
   },
   "scripts": {
     "build": "rimraf ./lib && rollup -c",
@@ -24,14 +28,14 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.20.13",
-    "@react-pdf/fns": "3.1.2",
-    "@react-pdf/font": "^4.0.3",
-    "@react-pdf/layout": "^4.4.1",
-    "@react-pdf/pdfkit": "^4.0.4",
-    "@react-pdf/primitives": "^4.1.1",
-    "@react-pdf/reconciler": "^1.1.4",
-    "@react-pdf/render": "^4.3.1",
-    "@react-pdf/types": "^2.9.1",
+    "@cmaccarone/react-pdf-fns": "3.1.2",
+    "@cmaccarone/react-pdf-font": "^4.0.3",
+    "@cmaccarone/react-pdf-layout": "^4.4.1",
+    "@cmaccarone/react-pdf-pdfkit": "^4.0.4",
+    "@cmaccarone/react-pdf-primitives": "^4.1.1",
+    "@cmaccarone/react-pdf-reconciler": "^1.1.4",
+    "@cmaccarone/react-pdf-render": "^4.3.1",
+    "@cmaccarone/react-pdf-types": "^2.9.1",
     "events": "^3.3.0",
     "object-assign": "^4.1.1",
     "prop-types": "^15.6.2",
